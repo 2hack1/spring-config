@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+        <bean class="in.sp.auto.xm.construc.Add"  >
+        <constructor-arg  value="kapi"/>
+        <constructor-arg value="122"/>
+        </bean>
+        <bean class="in.sp.auto.xm.construc.Add" autowire-candidate="false"   >
+        <constructor-arg  value="kpi"/>
+        <constructor-arg value="12"/>
+        </bean>
+             
+        <bean class="in.sp.auto.xm.construc.Student"  autowire="constructor">     
+        <constructor-arg value="121" index="0"/>
+        <constructor-arg  value="kapil1@gmail.com" index="2"/>
+         
+               </bean>
+        </beans>

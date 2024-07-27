@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+        <bean class="in.sp.auto.xm.bytype.Add" id="name" >
+        <property name="namee" value="kapi"/>
+        <property name="fname" value="122"/>
+
+        </bean>
+        <bean class="in.sp.auto.xm.bytype.Add" id="nam" autowire-candidate="false" ><!-- autowire-candidate="false" duplicate or two main koi ek ke liye -->
+        <property name="namee" value="ki"/>
+        <property name="fname" value="1"/>
+
+        </bean>
+               
+        <bean class="in.sp.auto.xm.bytype.Student"  autowire="byType">
+        <property name="email" value="kapil1@gmail.com"/>
+        <property name="roll" value="121"/>
+         
+               </bean>
+        </beans>
